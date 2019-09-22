@@ -19,21 +19,15 @@ import 'lofig' from 'lofig'; // not necessary if using CDN Link
 lofig.folder = 'config/default.json';
 
 // check if property exists
-
 await lofig.has('secret');
-// OR
-lofig.has('secret').then(res => {
-	if (res) console.log("secret is defined!");
-})
 
 // return property
-
 await lofig.get('secret');
-// OR
-lofig.get('secret').then(secret => {
-	if (secret) console.log("secret:", secret);
-})
 
+// NOTE: You can also use callbacks e.g.
+lofig.get('secret', res => {
+	console.log('secret', res);
+})
 ```
 
-See [example](https://github.com/jonathan-grah/lofig/tree/master/example) folder for more details.
+See the [example](https://github.com/jonathan-grah/lofig/tree/master/example) folder for more details.

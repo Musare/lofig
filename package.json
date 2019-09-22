@@ -15,7 +15,6 @@
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "bluebird": "^3.5.5",
     "exports-loader": "^0.7.0",
     "imports-loader": "^0.8.0",
     "snyk": "^1.226.1",
@@ -23,7 +22,6 @@
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
   },
-  "homepage": "https://github.com/jonathan-grah/lofig",
   "license": "MIT",
   "main": "dist/lofig.min.js",
   "name": "lofig",
@@ -36,5 +34,5 @@
     "build": "webpack --mode=production",
     "test": "snyk test"
   },
-  "version": "1.1.2"
+  "version": "1.2.1"
 }
