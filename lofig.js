@@ -1,5 +1,5 @@
 window.lofig = {
-	folder: 'config/default.json',
+	folder: '/config/default.json',
 	get: (query, cb) => {
 		return fetch(lofig.folder)
 			.then(response => {
